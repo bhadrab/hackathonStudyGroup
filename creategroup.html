@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Create a Group</title>
+    <link rel=stylesheet href="creategroup.css">
+
+  </head>
+
+  <body>
+
+    <nav>
+      <div id="logoTopLeft">
+        <a href="homepage.html">
+        <img src="logo.png" alt="Logo" max-width="100%" height="100%">
+        </a>
+      </div>
+
+      <div id="profilePicTopRight">
+        <a href="profilepage.html">
+        <img src="https://hoonchang.github.io/hackourcampus2020/profilepic.png" alt="Profile Picture" max-width="100%" height="100%">
+        </a>
+      </div>
+    </nav>
+
+    <div id="create-container" >
+    <form>
+
+      <div id="title-container">
+            <h1>Don't see a group you like? Create One!</h1>
+      </div>
+
+      <br/><br/>
+
+      <div id="criteria-container">
+
+        <div id="right-col">
+        <div id="meetingtime">
+           <p>Meeting Time</p>
+           <input class = "criteria-text-box" list="meetingtimes-list" name="meeting-time-input" />
+              <datalist id="meetingtimes-list">
+                <option value="12 AM">
+                <option value="01 AM">
+                <option value="02 AM">
+                <option value="03 AM">
+                <option value="04 AM">
+                <option value="05 AM">
+                <option value="06 AM">
+                <option value="07 AM">
+                <option value="08 AM">
+                <option value="09 AM">
+                <option value="10 AM">
+                <option value="11 AM">
+                <option value="12 PM">
+                <option value="01 PM">
+                <option value="02 PM">
+                <option value="03 PM">
+                <option value="04 PM">
+                <option value="05 PM">
+                <option value="06 PM">
+                <option value="07 PM">
+                <option value="08 PM">
+                <option value="09 PM">
+                <option value="10 PM">
+                <option value="11 PM">
+              </datalist>
+        </div>
+        <div id="meetingmode">
+          <p>Meeting Mode</p>
+            <input class = "criteria-text-box" type="text" name="meeting-mode-input" placeholder= "“Zoom” or “Discord”">
+        </div>
+        <div id="visibility">
+          <p>Visibility</p>
+          <div class = "input-text">
+            <input type="radio" name="visibility-in" value="public" id="vis_pub" title="Anyone can join the group"/>
+            <label for="vis_pub" title="Anyone can join the group">Public</label>
+            <input type="radio" name="visibility-in" value="request" id="vis_req" title="In order for a user to join this group, they must send a request that you may choose to accept"/>
+            <label for="vis_req" title="In order for a user to join this group, they must send a request that you may choose to accept">Join by Request</label>
+          </div>
+        </div>
+
+        </div>
+
+        <div id="left-col">
+
+          <div id="groupname">
+            <p>Group Name</p>
+            <input class = "criteria-text-box" type="text" name="group-name-input" placeholder= "“ANTHR 1400” or “Avatar”">
+          </div>
+          <div id="classcode">
+            <p>Class Code (if applicable)</p>
+            <input class = "criteria-text-box" type="text" name="class-code-input" placeholder= "“GOVT 1817”">
+          </div>
+          <div id="meetingdays">
+            <p>Meeting Days</p>
+              <div class = "input-text">
+                  
+              </div>
+          </div>
+          <div id="description">
+            <p>Description</p>
+              <textarea id = "criteria-textarea" name="description-input"  placeholder= "“Let's work on problem sets together!”" ></textarea>
+          </div>
+
+        </div>
+        <a href="profilepage.html" id="submit-button">Submit</a>
+        
+
+      </div> <!--criteria-container-->
+
+
+
+
+
+    </form>
+    </div> <!--create-container-->
+  </body>
+</html>

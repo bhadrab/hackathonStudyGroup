@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="searchv2.css">
+    </head>
+
+    <body>
+
+
+        <nav>
+          <div id="logoTopLeft">
+            <a href="homepage.html">
+            <img src="logo.png" alt="Logo" max-width="100%" height="100%">
+            </a>
+          </div>
+          <div id="profilePicTopRight">
+            <a href="profilepage.html">
+            <img src="https://hoonchang.github.io/hackourcampus2020/profilepic.png" alt="Profile Picture" max-width="100%" height="100%">
+            </a>
+          </div>
+        </nav>
+
+
+
+        <div id = 'search-div'>
+            <div id = 'search-div-2'>
+                <input id = 'search-bar' type="text" name="search-bar-name" value="" placeholder="Search">
+                <button id = 'search-button' type="button" name="search-button-name"> <i id = 'search-icon' class="fas fa-search"></i> </button>
+            </div>
+        </div>
+
+        <div id = 'main-grid'>
+            <div id = 'results'>
+                <h1 id = 'results-title'> Search Results </h1>
+                <div id = 'results-info-text'>
+                  <a href="groupdash.html">
+                <div id = 'result-one' class = 'course-result'>
+                    <div>
+                        <h1> CS 2112 </h1>
+                        <h2> Group discussion for anyone in CS 2112!</h2>
+                        <h3> <i class="fab fa-discord"></i> &nbsp Discord </h3>
+                    </div>
+                    <div>
+                        <h1> M - W - F </h1>
+                        <h2> 10:00AM </h2>
+                    </div>
+                    <div>
+                        <div>
+                            <i class="fas fa-users"></i>
+                            <p>245</p>
+                        </div>
+                        <h1><i class="fas fa-sun"></i>&nbspMorning</h1>
+                        <h2>Public</h2>
+                    </div>
+                </div>
+              </a>
+              <a href="groupdash.html">
+                <div id = 'result-two' class = 'course-result'>
+                    <div>
+                        <h1> MATH 1910 </h1>
+                        <h2> Zoom study sessions every Friday at 8:00 PM</h2>
+                        <h3> <i class="fas fa-video"></i> &nbsp Zoom </h3>
+                    </div>
+                    <div>
+                        <h1> F </h1>
+                        <h2> 8:00PM </h2>
+                    </div>
+                    <div>
+                        <div>
+                            <i class="fas fa-users"></i>
+                            <p>32</p>
+                        </div>
+                        <h1><i class="fas fa-moon"></i>&nbspNight</h1>
+                        <h2>Private</h2>
+                    </div>
+                </div>
+              </a>
+              <a href="groupdash.html">
+                <div id = 'result-three' class = 'course-result'>
+                    <div>
+                        <h1> COML 1106 </h1>
+                        <h2> Discussion room for reviewing books from class.</h2>
+                        <h3> <i class="fas fa-comment"></i> &nbsp GroupMe </h3>
+                    </div>
+                    <div>
+                        <h1> T - R </h1>
+                        <h2> 12:00PM </h2>
+                    </div>
+                    <div>
+                        <div>
+                            <i class="fas fa-users"></i>
+                            <p>53</p>
+                        </div>
+                        <h1><i class="fas fa-cloud-sun"></i>&nbspNoon</h1>
+                        <h2>Invite Only</h2>
+                    </div>
+                </div>
+              </a>
+              <a href="groupdash.html">
+                <div id = 'result-four' class = 'course-result'>
+                    <div>
+                        <h1> GOVT 1101 </h1>
+                        <h2> Political discussions hosted daily!</h2>
+                        <h3> <i class="fas fa-phone"></i> &nbsp Google Meet </h3>
+                    </div>
+                    <div>
+                        <h1> M - T- W - R - F </h1>
+                        <h2> 10:00 AM </h2>
+                    </div>
+                    <div>
+                        <div>
+                            <i class="fas fa-users"></i>
+                            <p>114</p>
+                        </div>
+                        <h1><i class="fas fa-sun"></i>&nbspMorning</h1>
+                        <h2>Public</h2>
+                    </div>
+                </div>
+              </a>
+              </div>
+            </div>
+            <div id = 'filters'>
+                <h1 id = 'filters-title'> Filters </h1>
+                <div id = 'filter-box'>
+                    <h1> Narrow your search by..</h1>
+                    <select name="subject" id="subject-selector">
+                        <option value="">Subject</option>
+                        <option value="volvo">CHEM</option>
+                        <option value="saab">CS</option>
+                        <option value="mercedes">ENGL</option>
+                        <option value="audi">GOVT</option>
+                        <option value="audi">MATH</option>
+                    </select>
+                    <select name="time" id="time-selector">
+                        <option value="">Time</option>
+                        <option value="saab">Morning</option>
+                        <option value="mercedes">Noon</option>
+                        <option value="audi">Night</option>
+                    </select>
+                    <select name="mode" id="mode-selector">
+                        <option value="">Meeting Mode</option>
+                        <option value="mercedes">Discord</option>
+                        <option value="audi">Google Meet</option>
+                        <option value="audi">GroupMe</option>
+                        <option value="saab">Zoom</option>
+                    </select>
+                    <select name="visibility" id="visibility-selector">
+                        <option value="">Visibility</option>
+                        <option value="saab">Public</option>
+                        <option value="mercedes">Request-Only</option>
+                    </select>
+                    <select name="days" id="days-selector">
+                        <option value="saab">Days</option>
+                        <option value="saab">Monday</option>
+                        <option value="mercedes">Tuesday</option>
+                        <option value="audi">Wednesday</option>
+                        <option value="audi">Thursday</option>
+                        <option value="audi">Friday</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/a2dd891bab.js" crossorigin="anonymous"></script>
+        <script src = 'scripts/main.js'></script>
+    </body>
+
+</html>

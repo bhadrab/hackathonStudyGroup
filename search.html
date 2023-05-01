@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="search.css">
+    </head>
+
+    <body>
+        <nav>
+            <div id = 'logo'>
+                <i id = 'logo-icon' class="far fa-calendar"> <p>Lorem.</p> </i>
+            </div>
+            <div id = 'profile'>
+                <i id = 'profile-icon' class="fas fa-user"></i>
+            </div>
+        </nav>
+        <div id = 'search-div'>
+            <div id = 'search-div-2'>
+                <input id = 'search-bar' type="text" name="search-bar-name" value="" placeholder="Search">
+                <button id = 'search-button' type="button" name="search-button-name"> <i id = 'search-icon' class="fas fa-search"></i> </button>
+            </div>
+        </div>
+
+        <div id = 'main-grid'>
+            <div id = 'results'>
+                <div id = 'result-one' class = 'course-result'>
+                    <div>
+                        <h1> CS 2112 </h1>
+                        <h2> Group chat for anyone in CS 2112 !</h2>
+                        <h3> <i class="fab fa-discord"></i> &nbsp Discord </h3>
+                    </div>
+                    <div> M - W - F </div>
+                    <div> Morning </div>
+                </div>
+                <div id = 'result-two' class = 'course-result'>
+                    <div>
+                        <h1> MATH 1910 </h1>
+                        <h2> Zoom study sessions every friday at 8:00 PM</h2>
+                        <h3> <i class="fas fa-video"></i> &nbsp Zoom </h3>
+                    </div>
+                    <div> F </div>
+                    <div> Night </div>
+                </div>
+                <div id = 'result-three' class = 'course-result'>
+                    <div>
+                        <h1> COML 1106 </h1>
+                        <h2> Discussion room for reviewing books from class.</h2>
+                        <h3> <i class="fas fa-comment"></i> &nbsp GroupMe </h3>
+                    </div>
+                    <div> T - R </div>
+                    <div> Noon </div>
+                </div>
+                <div id = 'result-four' class = 'course-result'>
+                    <div>
+                        <h1> ENGL 1116 </h1>
+                        <h2> Read books with us every monday!</h2>
+                        <h3> <i class="fas fa-phone"></i> &nbsp Google Meet </h3>
+                    </div>
+                    <div> M </div>
+                    <div> Morning </div>
+                </div>
+            </div>
+            <div id = 'filters'>
+                <div id = 'filter-box'>
+                    <h1> Filter By..</h1>
+                    <select name="subject" id="subject-selector">
+                        <option value="" disabled selected>Subject</option>
+                        <option value="volvo">CHEM</option>
+                        <option value="saab">CS</option>
+                        <option value="mercedes">ENGL</option>
+                        <option value="audi">MATH</option>
+                    </select>
+                    <select name="time" id="time-selector">
+                        <option value="" disabled selected>Time</option>
+                        <option value="saab">Morning</option>
+                        <option value="mercedes">Noon</option>
+                        <option value="audi">Night</option>
+                    </select>
+                    <select name="mode" id="mode-selector">
+                        <option value="" disabled selected>Meeting Mode</option>
+                        <option value="saab">Zoom</option>
+                        <option value="mercedes">Discord</option>
+                        <option value="audi">Google Meet</option>
+                    </select>
+                    <select name="status" id="status-selector">
+                        <option value="" disabled selected>Status</option>
+                        <option value="saab">Public</option>
+                        <option value="mercedes">Invite-Only</option>
+                        <option value="audi">Access Code</option>
+                    </select>
+                    <select name="days" id="days-selector">
+                        <option value="" disabled selected>Days</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+        <script src="https://kit.fontawesome.com/a2dd891bab.js" crossorigin="anonymous"></script>
+        <script src = 'scripts/main.js'></script>
+    </body>
+
+</html>

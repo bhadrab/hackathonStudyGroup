@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="glide.css">
+    <link rel="stylesheet" type="text/css" href="profilepage.css">
+
+  </head>
+
+
+  <body>
+    <nav>
+      <div id="logoTopLeft">
+        <a href="homepage.html">
+        <img src="logo.png" alt="Logo" max-width="100%" height="100%">
+        </a>
+      </div>
+
+      <div id="profilePicTopRight">
+        <a href="profilepage.html">
+        <img src="https://hoonchang.github.io/hackourcampus2020/profilepic.png" alt="Profile Picture" max-width="100%" height="100%">
+        </a>
+      </div>
+    </nav>
+    <div id="myProfileBox">
+      <div id="myProfileBoxHeader">
+        <div class="headerText">
+          MY PROFILE
+        </div>
+      </div>
+      <div id="profilePicContainer">
+        <img src="https://hoonchang.github.io/hackourcampus2020/profilepic.png" alt="Profile Picture" width="100%" height="40%">
+      </div>
+      <div id="profileInfoContainer">
+        <div class="profileText">
+          Ezra Cornell
+        </div>
+        <div class="profileText">
+          &nbsp;
+        </div>
+        <div class="profileText">
+          Timezone: EDT (UTC -4)
+        </div>
+        <div id="timezoneButtonContainer">
+          <div class="dropdown">
+            <button onclick="myFunction()" id="timezoneButton">Change Timezone</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#PDT">PDT</a>
+              <a href="#MDT">MDT</a>
+              <a href="#CDT">CDT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="myGroupsBox">
+      <div id="myGroupsBoxHeader">
+        <div class="headerText">
+          MY GROUPS
+        </div>
+      </div>
+      <div id="myGroupsContainer">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="groupBlock">
+                  <div class="groupBlockTitle">
+                    CS 1110
+                  </div>
+                  <div class="spacer">
+                    &nbsp;
+                  </div>
+                  <a href="groupdash.html"><button type="button" class="meetingBlockButton">Details</button></a>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="groupBlock">
+                  <div class="groupBlockTitle">
+                    GUITAR
+                  </div>
+                  <div class="spacer">
+                    &nbsp;
+                  </div>
+                  <a href="groupdash.html"><button type="button" class="meetingBlockButton">Details</button></a>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="groupBlock">
+                  <div class="groupBlockTitle">
+                    MATH 2940
+                  </div>
+                  <div class="spacer">
+                    &nbsp;
+                  </div>
+                  <a href="groupdash.html"><button type="button" class="meetingBlockButton">Details</button></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&lt;</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&gt;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="myMeetingsBox">
+      <div id="myMeetingsBoxHeader">
+        <div class="headerText">
+          MY MEETINGS TODAY
+        </div>
+      </div>
+      <div id="myMeetingsContainer">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="meetingBlock">
+                  <div class="meetingBlockTitle">
+                    GUITAR
+                  </div>
+                  <div class="meetingTime">
+                    Starts at 11:00 PM
+                  </div>
+                  <a href="groupdash.html"><button type="button" class="meetingBlockButton">Details</button></a>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="meetingBlock">
+                  <div class="meetingBlockTitle">
+                    MATH 2940
+                  </div>
+                  <div class="meetingTime">
+                    Starts at 11:00 AM
+                  </div>
+                  <a href="groupdash.html"><button type="button" class="meetingBlockButton">Details</button></a>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="meetingBlock">
+                  <div class="meetingBlockTitle">
+                    CS 1110
+                  </div>
+                  <div class="meetingTime">
+                    Starts at 1:00 PM
+                  </div>
+                  <a href="groupdash.html"><button type="button" class="meetingBlockButton">Details</button></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&lt;</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&gt;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('#timezoneButton')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script>
+    const sliders = document.querySelectorAll('.glide')
+    const conf = {
+    	type: 'carousel',
+      autoplay: 2000,
+      perView: 3
+    }
+    sliders.forEach(item => {
+      new Glide(item, conf).mount()
+    })
+  </script>
+
+  </body>
+
+</html>

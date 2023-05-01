@@ -1,0 +1,307 @@
+@font-face{
+    font-family: "StartFont";
+    src: url("LeagueGothic-Regular.otf")
+}
+body{
+    overflow-x:hidden;
+    width:inherit;
+    font-family:StartFont;
+    background-color:#78d1cc;
+    margin:0px;
+    padding:0;
+}
+nav{
+    position:absolute;
+    top:0px;
+    display:grid;
+    grid-template-columns:50vw 50vw;
+    grid-template-areas:
+    "logo profile";
+    justify-content: center;
+    margin-top:2%;
+    padding:0;
+    background-color:none;
+    height:20%;
+
+}
+#logoTopLeft {
+  top: 3%;
+  height: 50%;
+  left: 5%;
+  position: absolute;
+}
+#profilePicTopRight {
+  top: 4%;
+  height: 35%;
+  right: 6%;
+  position: absolute;
+}
+
+/*
+#logo{
+    grid-area:logo;
+    justify-self:start;
+    width:200px;
+    height:100px;
+    display:inline-block;
+    background-color: none;
+    text-align: center;
+    background-color: black;
+    border-bottom-right-radius: 20px;
+}
+#logo p{
+    padding-left:5px;
+    display:inline-block;
+}
+#logo-icon{
+    font-size:40px;
+    color:#ffffff;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#logo-icon:hover{
+
+}
+#profile{
+    grid-area:profile;
+    justify-self:end;
+    width:60px;
+    height:50px;
+    display:inline-block;
+    background-color: none;
+    text-align: center;
+    background-color: black;
+    border-bottom-left-radius: 20px;
+    transition:background-color 300ms ease;
+    width:8%;
+}
+#profile:hover{
+    background-color: white;
+    cursor:pointer;
+}
+#profile:hover #profile-icon{
+    color: #000000;
+}
+#profile-icon{
+    font-size:100%;
+    color:#ffffff;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    transition:color 300ms ease;
+}
+*/
+/* #profile-icon:hover{
+    color:#3760df;
+    cursor:pointer;
+} */
+#search-div{
+    padding-top: 10%;
+    text-align:center;
+}
+#search-div-2{
+    display:inline-block;
+    margin:0 0 0 0;
+}
+
+#search-bar{
+    color:#716e6e;
+    float:left;
+    font-family:StartFont;
+    padding-left:20px;
+    width:35vw;
+    height:50px;
+    border: none;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    font-size:30px;
+    margin:0px 0px 20px 0px;
+    padding:none;
+    transition:background-color 400ms ease;
+}
+#search-bar:hover{
+    background-color:#e3e3e3;
+}
+#search-bar::placeholder{
+    color:#8f8f8f;
+}
+
+#search-bar:focus{
+    outline:none;
+}
+
+#search-button{
+    border-top-right-radius:12px;
+    border-bottom-right-radius:12px;
+    height:52px;
+    width:3vw;
+    border:none;
+    background-color:white;
+    margin:none;
+    padding:none;
+    transition: background-color 300ms ease;
+}
+#search-icon{
+    font-size:20px;
+    color:#8f8f8f;
+}
+#search-button:hover{
+    background-color:#e3e3e3;
+    cursor:pointer;
+}
+
+#main-grid{
+    display:grid;
+    margin-top:1%;
+    /* height:60vh; */
+    grid-template-columns:65vw 35vw;
+    grid-template-areas:
+    "results filters";
+}
+
+#results{
+    grid-area:results;
+    background-color:#dedede;
+    background:none;
+    padding:0px 0px 20px 70px;
+}
+#results-title{
+    color:white;
+    font-weight: normal;
+    font-size:40px;
+    margin:0px 0px 0px 30px;
+}
+#results-info-text{
+  text-align: center;
+  font-size:10px;
+}
+#filters{
+    grid-area:filters;
+    background-color:#dadada;
+    background:none;
+    padding: 0px 0px 46px 0px;
+    border-top-left-radius: 20px;
+}
+#filters-title{
+    color:white;
+    font-weight: normal;
+    font-size:40px;
+    margin:0px 0px 0px 30px;
+}
+#filter-box{
+    color:white;
+    display:inline-block;
+    width:75%;
+    background-color:#ffde69;
+    border-radius:20px;
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+    margin:25px 0px 50px 20px;
+    padding:10px 0px 10px 20px;
+}
+#filter-box h1{
+    font-weight: normal;
+    font-size: 38px;
+    margin-left:30px;
+}
+#filter-box select{
+    font-family: "StartFont";
+    font-size: 24px;
+    color:#757575;
+    display:block;
+    margin:30px auto 50px auto;
+    height:50px;
+    width:70%;
+    border: none;
+    border-radius: 12px;
+    padding:0px 0px 0px 10px;
+    transition:background-color 200ms ease;
+}
+#filter-box select:hover{
+    background-color:#e3e3e3;
+}
+.course-result{
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+    box-sizing:
+    border-box;
+    display:grid;
+    grid-template-columns:50% 25% 25%;
+    grid-template-areas:
+    "main-info schedule time";
+    color:white;
+    width:90%;
+    margin:25px 0px 50px 20px;
+    padding:10px 0px 10px 20px;
+    background-color: #fa86cb;
+    border-radius:20px;
+    letter-spacing: 1px;
+    transition: all 400ms ease;
+}
+.course-result:hover{
+    box-shadow: 10px 10px rgba(0,0,0,.25);
+    transform: translate(20px, 20px);
+    cursor:pointer;
+}
+.course-result div:nth-child(1){
+    text-align: left;
+    font-size:40px;
+    grid-area: main-info;
+    margin-top:0;
+}
+.course-result div:nth-child(1) h1{
+    font-weight:normal;
+    margin: 0px 0px 0px 0px;
+    font-size:40px;
+}
+.course-result div:nth-child(1) h2{
+    font-weight:normal;
+    margin: 0px 0px 0px 0px;
+    font-size:26px;
+}
+.course-result div:nth-child(1) h3{
+    font-weight:normal;
+    margin:20px 0px 0px 0px;
+    font-size:24px;
+}
+
+.course-result div:nth-child(2){
+    grid-area: schedule;
+    margin-top:0px;
+}
+.course-result div:nth-child(2) h1{
+    font-size:20px;
+    font-weight: normal;
+    margin:12% 0px 3% 0px;
+}
+.course-result div:nth-child(2) h2{
+    font-size:20px;
+    font-weight: normal;
+    margin:0px 0px 0px 0px;
+}
+.course-result div:nth-child(3){
+    margin-left:10%;
+    grid-area: time;
+    font-size:30px;
+    margin-top:0px;
+}
+.course-result div:nth-child(3) div{
+    font-size: 20px;
+    margin-bottom:0px;
+    text-align: center;
+}
+.course-result div:nth-child(3) div p{
+    margin:0;
+}
+.course-result div:nth-child(3) h1{
+    margin:10px 0px 0px 0px;
+    font-size:20px;
+    font-weight: normal;
+}
+.course-result div:nth-child(3) h2{
+    margin:10px 0px 0px 0px;
+    font-size:20px;
+    font-weight: normal;
+}
+a{
+  text-decoration: none;
+}

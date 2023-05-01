@@ -1,0 +1,156 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #ffde69;
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: 'league-gothic';
+  src: url('LeagueGothic-Regular.otf');
+}
+nav{
+    position:absolute;
+    top:0px;
+    display:grid;
+    grid-template-columns:50vw 50vw;
+    grid-template-areas:
+    "logo profile";
+    justify-content: center;
+    margin-top:2%;
+    padding:0;
+    background-color:none;
+    height:20%;
+}
+#logoTopLeft {
+  top: 3%;
+  height: 50%;
+  left: 5%;
+  position: absolute;
+}
+#profilePicTopRight {
+  top: 4%;
+  height: 35%;
+  right: 6%;
+  position: absolute;
+}
+
+#full-container{
+  font-family: league-gothic, sans-serif;
+  color: white;
+  position: relative;
+  top: 20%;
+  border-radius:15px;
+  width:85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:15%;
+}
+
+#groupname-container{
+  background-color: #7640a3;
+  padding-left:1%;
+  border-radius: 15px;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+}
+#groupname-container p{
+  font-size: 30px;
+  padding-left: 5%;
+  padding-bottom: 3%;
+  padding-top: 0px;
+}
+
+h1{
+  font-size: 50px;
+  letter-spacing: 1px;
+  padding-top: 3%;
+  padding-left: 5%;
+}
+#join-button{
+  position: absolute;
+  margin-top:4%;
+  margin-left: 88%;
+  color: white;
+  font-size: 70px;
+  padding: 1%;
+  cursor: pointer;
+  transition:visibility 300ms ease;
+}
+#joined-button{
+  position: absolute;
+  margin-top:4%;
+  margin-left: 88%;
+  color: white;
+  font-size: 70px;
+  padding: 1%;
+  visibility: hidden;
+  transition:visibility 300ms ease;
+}
+#join-button:hover{
+  color:#8f8f8f;
+}
+#basicinfo-container{
+  float:left;
+  background-color: #fa86cb;
+  color: white;
+  width: 20%;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+}
+button:focus{
+  outline: none;
+}
+#members-container{
+  background-color: #78d1cc;
+  color: white;
+  width: 72%;
+  margin-left:25%;
+  border-radius: 10px;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  padding-top: 0.1%;
+  padding-left: 3%;
+  padding-bottom: 0.1%;
+}
+#media-links{
+  float:left;
+  background-color: #78d1cc;
+  color: white;
+  width: 60%;
+  border-radius: 10px;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  padding-top: 0.1%;
+  padding-left: 3%;
+  padding-bottom: 1%;
+}
+#linktomeet{
+  background-color: #fa86cb;
+  color: white;
+  width: 29%;
+  margin-left: 68%;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  padding-top: 0.1%;
+  padding-left: 3%;
+  padding-bottom: 1%;
+}
+
+
+#plus{
+visibility:visible;
+transition:visibility 300ms ease;
+}
+
+#check{
+visbility:hidden;
+transition:visibility 300ms ease;
+}

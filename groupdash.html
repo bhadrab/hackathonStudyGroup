@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Group Dash</title>
+    <link rel=stylesheet href="groupdash.css">
+  </head>
+  <body>
+    <nav>
+      <div id="logoTopLeft">
+        <a href="homepage.html">
+        <img src="logo.png" alt="Logo" max-width="100%" height="100%">
+        </a>
+      </div>
+
+      <div id="profilePicTopRight">
+        <a href="profilepage.html">
+        <img src="https://hoonchang.github.io/hackourcampus2020/profilepic.png" alt="Profile Picture" max-width="100%" height="100%">
+        </a>
+      </div>
+    </nav>
+
+    <div id="full-container">
+
+    <div id="groupname-container">
+      <i id="join-button" class="fas fa-plus" onclick="myFunc()"></i>
+      <i id ="joined-button" class="fas fa-check"></i>
+      <div id="heading"><h1>CS 2112</h1></div>
+      <p>Group discussion for anyone in CS 2112!</p>
+
+    </div>
+
+
+    <div id="basicinfo-container">
+      <p>M-W-F</p>
+      <p>10:00AM </p>
+      <p>Public</p>
+    </div>
+    <div id="members-container">
+      <p>Members<p>
+      <img src="https://hoonchang.github.io/hackourcampus2020/profilepic.png" alt="Profile Picture" width="9%">
+      <img src="https://media.discordapp.net/attachments/747248137713746074/749294208044499025/person2.png" alt="Profile Picture" width="9%">
+      <img src="https://media.discordapp.net/attachments/747248137713746074/749294208896204890/person3.png" alt="Profile Picture" width="9%">
+      <img src="https://media.discordapp.net/attachments/747248137713746074/749294219306336296/person4.png" alt="Profile Picture" width="9%">
+      <img src="https://hoonchang.github.io/hackourcampus2020/profilepic.png" alt="Profile Picture" width="9%">
+      <img src="https://media.discordapp.net/attachments/747248137713746074/749294219306336296/person4.png" alt="Profile Picture" width="9%">
+      <img src="https://hoonchang.github.io/hackourcampus2020/profilepic.png" alt="Profile Picture" width="9%">
+      <img src="https://media.discordapp.net/attachments/747248137713746074/749294208896204890/person3.png" alt="Profile Picture" width="9%">
+      <img src="https://media.discordapp.net/attachments/747248137713746074/749294208044499025/person2.png" alt="Profile Picture" width="9%">
+    </div>
+<br><br>
+    <div id ="media-links">
+      <p>Links and Resources</p>
+      <a href="groupdash.html"><p>Study Guide, Unit Two - Member 14</p></a>
+      <a href="groupdash.html"><p>Class notes 09/11/2020 - Member 15, Member 02, Member 34 </p></a>
+      <a href="groupdash.html"><p>Assignment to-do list </p></a>
+    </div>
+
+    <div id ="linktomeet">
+      <p>Next Meeting Mode : Zoom</p>
+      <a href="https://www.google.com/url?q=https://us04web.zoom.us/j/76961312069?pwd%3DOUdLUTUyZk9XVldxMlJBL0hvQ0dxZz09&sa=D&source=hangouts&ust=1598776148953000&usg=AFQjCNF_k03cfnKUbNmSuuLZQCymSWt_qg"><p>Link to Zoom</p></a>
+      <p>Meeting ID: 769 6131 2069</p>
+      <p>Password: 7zamuk</p>
+
+    </div>
+
+
+    </div>
+
+    <script>
+
+    plus = document.querySelectorAll("#join-button")[0];
+    check = document.querySelectorAll("#joined-button")[0];
+    console.log(plus);
+    console.log(check);
+
+    function myFunc(){
+        check.style.visibility="visible";
+        plus.style.visibility="hidden";
+    }
+
+
+    </script>
+    <script src="https://kit.fontawesome.com/a2dd891bab.js" crossorigin="anonymous"></script>
+
+  </body>
+</html>
